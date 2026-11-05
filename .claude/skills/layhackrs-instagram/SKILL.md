@@ -1,8 +1,8 @@
 ---
 name: layhackrs-instagram
-description: "Flujo fijo para la cuenta de Instagram @layhackrs_ (Creator, type beats en FL Studio) vía el conector Composio de Instagram. Úsalo cuando el usuario diga 'resume mis posts', 'cómo van mis reels', 'qué tal le fue al último', 'sube este video', 'publica este beat', 'prepárame el caption', 'hashtags para este beat', 'reporte de Instagram' o pegue un enlace de video/MP4 para publicar."
+description: "Marketing y crecimiento para la cuenta de Instagram @layhackrs_ (Creator, type beats en FL Studio) vía el conector Composio de Instagram. El usuario publica él mismo; Claude analiza y prepara. Úsalo cuando diga 'resume mis posts', 'cómo van mis reels', 'qué tal le fue al último', 'voy a subir un beat', 'prepárame el caption', 'hashtags para este beat', 'cómo crezco', 'mejora mi perfil' o 'reporte de Instagram'."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Instagram @layhackrs_ (Composio)
@@ -35,21 +35,24 @@ Ejecuta las herramientas que no dependen entre sí en paralelo, con `COMPOSIO_MU
    - Entre 3 y 5 conclusiones concretas y una recomendación accionable.
 3. Compara con lo que se sabe hasta ahora (ver "Lo que funciona") y actualiza esa sección si los datos cambian.
 
-## Flujo 2 — Publicar un Reel ("sube este video")
+## Flujo 2 — Antes de publicar ("voy a subir un beat")
 
-1. **Video:** necesitas una URL HTTPS pública y directa a un MP4 (H.264 + AAC, 9:16, de 3 s a 15 min). Los enlaces de Google Drive o Dropbox para compartir no sirven tal cual: tienen que ser de descarga directa. Si el usuario no tiene la URL, pídesela o ayúdale a conseguirla.
-2. **Datos:** pregunta el artista del type beat, el estilo y el clip de fondo, si no los dio.
-3. **Caption:** usa el formato de la cuenta:
+El usuario publica él mismo desde la app. **No publiques desde aquí** a menos que lo pida explícitamente; si lo pide, usa `INSTAGRAM_POST_IG_USER_MEDIA` + `INSTAGRAM_POST_IG_USER_MEDIA_PUBLISH` con una URL pública directa del MP4 y confirmación previa.
+
+Entrega un "paquete de publicación":
+1. **Gancho (primeros 3 s):** es la métrica que decide todo (ver "Lo que funciona"). Sugiere arrancar directo en el drop, el 808 o el sample más fuerte, sin intro silenciosa, y un texto en pantalla corto ("POV: Nujabes produciendo para Naruto").
+2. **Clip de fondo** recomendado según los datos.
+3. **Caption** con el formato de la cuenta:
    ```
    <Artista> Type Beat ☁️ #flstudio #<estilo> #<anime_o_juego> #reels #layhackrs
    ```
-   - Usa ☁️ para los beats chill o boom bap y 🥀 para los oscuros o melódicos.
-   - Pon entre 4 y 6 hashtags. Incluye siempre `#flstudio` y `#layhackrs`.
-   - Añade una pregunta corta para provocar comentarios, por ejemplo "¿Qué rapero le pondrías?". Hoy los comentarios son el punto débil de la cuenta.
-   - Escribe `#` normal. No lo codifiques como `%23`.
-4. **Confirmación obligatoria:** muestra el video (URL), el caption final y la hora, y espera un "sí" explícito. Nunca publiques sin él.
-5. Crea el contenedor y publica con el `creation_id`. Si sale el error 9007, espera unos 20 s y reintenta la publicación. Si sale "could not be fetched", la URL no es pública o no es directa.
-6. Verifica con `INSTAGRAM_GET_IG_MEDIA` usando el id publicado y pásale al usuario el permalink.
+   - ☁️ chill/boom bap, 🥀 oscuro/melódico. 4–6 hashtags, siempre `#flstudio` y `#layhackrs`.
+   - Cierra con una pregunta corta o un CTA ("¿Qué rapero le pondrías?", "Comenta 🔥 si lo quieres completo").
+4. **Checklist:** vertical 9:16, el audio arranca fuerte, portada legible, comentario fijado propio con CTA.
+
+## Flujo 2b — Revisión a las 24–72 h ("¿cómo le fue al último?")
+
+Saca las métricas del último Reel (`views`, `reach`, `saved`, `shares`, `ig_reels_avg_watch_time`, `reels_skip_rate`) y compáralas con la mediana de la cuenta. Di en una frase por qué crees que funcionó o no, y qué cambiar en el siguiente.
 
 ## Flujo 3 — Solo caption o ideas
 
@@ -57,8 +60,17 @@ Genera 2 o 3 opciones de caption con el formato de arriba y sugiere el clip de f
 
 ## Lo que funciona (actualizado 2026-11-05, últimos 10 Reels)
 
-- Los beats **Nujabes / boom bap** dominan: 665 de 812 likes (82%). Con **Naruto** de fondo sacaron 488, 101 y 67 likes; con Samurai Champloo, solo 9.
-- El trap (Future, Eladio Carrión, Roddy Ricch, Gera MX) se queda entre 8 y 56 likes.
-- Hay muy pocos comentarios: 13 en total.
-- El ritmo habitual es un post cada 2 a 4 días. El último fue el 26 de octubre.
-- La muestra es pequeña, así que trata estas conclusiones como hipótesis y revísalas con cada reporte.
+| Reel | Views | Skip 3 s | Watch prom. |
+|---|---|---|---|
+| Nujabes + Naruto (12 oct) | 38 457 | 28 % | 15.5 s |
+| Nujabes + Naruto (26 oct) | 3 160 | 43 % | 8.4 s |
+| Nujabes + Naruto (14 oct) | 2 660 | 40 % | 10.4 s |
+| Future x Southside (30 sep / 4 oct) | ~1 450 | 43–48 % | ~9.4 s |
+| Roddy Ricch / Nujabes + Champloo | ~1 250 | 42–47 % | 6–7 s |
+| Future x 808mafia, Eladio, Gera MX | 216–354 | 52–75 % | ~5.7 s |
+
+- **El skip rate de los primeros 3 s es lo que más pesa.** Debajo de ~30 % el Reel explota; por encima de ~50 % se muere en menos de 400 views. Optimiza el gancho antes que cualquier otra cosa.
+- **Nujabes / boom bap + Naruto** es la fórmula ganadora (82 % de los likes, 87 % de las views).
+- **El gran hueco es la conversión:** ~50 000 views en 10 Reels, pero solo 55 seguidores. Pocos guardados (≤26) y compartidos (≤17). Prioriza el perfil (bio, enlace, destacados) y los CTA.
+- El ritmo habitual es un post cada 2 a 4 días.
+- La muestra es pequeña: trata esto como hipótesis y actualiza la tabla con cada reporte.
