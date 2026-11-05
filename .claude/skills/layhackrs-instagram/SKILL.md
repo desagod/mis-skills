@@ -42,12 +42,19 @@ El usuario publica él mismo desde la app. **No publiques desde aquí** a menos 
 Entrega un "paquete de publicación":
 1. **Gancho (primeros 3 s):** es la métrica que decide todo (ver "Lo que funciona"). Sugiere arrancar directo en el drop, el 808 o el sample más fuerte, sin intro silenciosa, y un texto en pantalla corto ("POV: Nujabes produciendo para Naruto").
 2. **Clip de fondo** recomendado según los datos.
-3. **Caption** con el formato de la cuenta:
+3. **Caption en INGLÉS.** La audiencia es principalmente de EE. UU. Habla con el usuario en español, pero escribe los captions, el texto en pantalla y el comentario fijado en inglés, con el estilo de productores grandes de type beats (corto, seguro de sí, sin sonar a IA):
    ```
-   <Artista> Type Beat ☁️ #flstudio #<estilo> #<anime_o_juego> #reels #layhackrs
+   [FREE] <Artist> Type Beat - "<BEAT NAME>" <emoji>
+   <1 línea de vibe opcional, ej. "Dante pulled up 😈">
+   <CTA: "Tag a rapper who'd body this 👇" / "Link in bio for leases 🔗">
+   prod. layhackrs
+   #<artist>typebeat #typebeat #flstudio #<juego_o_anime> #layhackrs
    ```
-   - ☁️ chill/boom bap, 🥀 oscuro/melódico. 4–6 hashtags, siempre `#flstudio` y `#layhackrs`.
-   - Cierra con una pregunta corta o un CTA ("¿Qué rapero le pondrías?", "Comenta 🔥 si lo quieres completo").
+   - El nombre del beat va entre comillas y en mayúsculas ("MIDNIGHT" fue el mejor de los 2000's). El tag de estilo es opcional: `| Y2K x Timbaland`.
+   - Usa `[FREE]` solo si el usuario lo da gratis (for profit = lease). Si no, pon "Leases available 🔗 link in bio".
+   - ☁️ chill/boom bap, 🥀 oscuro/melódico, 😈 agresivo. 4–6 hashtags; siempre `#flstudio`, `#typebeat` y `#layhackrs`.
+   - Usa jerga natural de productores de EE. UU. ("cooking", "who's hopping on this?", "go crazy on this one"). Nada de traducciones literales del español.
+   - El crédito del clip va al final: `🎮 clip: <channel>`.
 4. **Checklist:** vertical 9:16, el audio arranca fuerte, portada legible, comentario fijado propio con CTA.
 
 ## Flujo 2b — Revisión a las 24–72 h ("¿cómo le fue al último?")
