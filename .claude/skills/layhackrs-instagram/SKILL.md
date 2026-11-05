@@ -70,7 +70,10 @@ Genera 2 o 3 opciones de caption con el formato de arriba y sugiere el clip de f
 | Future x 808mafia, Eladio, Gera MX | 216–354 | 52–75 % | ~5.7 s |
 
 - **El skip rate de los primeros 3 s es lo que más pesa.** Debajo de ~30 % el Reel explota; por encima de ~50 % se muere en menos de 400 views. Optimiza el gancho antes que cualquier otra cosa.
-- **Nujabes / boom bap + Naruto** es la fórmula ganadora (82 % de los likes, 87 % de las views).
+- **Nujabes / boom bap + Naruto** tiene el techo más alto (el viral de 38k), pero **el usuario quiere variar géneros** (trap, 2000's, etc.) y eso está bien: no lo encasilles en Nujabes.
+- **Lo que decide es el paquete, no el género.** Fuera del viral, los mejores de cada estilo andan parecido: Nujabes 1.8k–3.2k, **2000's Club x Don Toliver "MIDNIGHT" + Need for Speed 2.9k** (91 likes), trap con artista conocido + clip de juego/anime 1.3k–1.6k (Pierre Bourne + Naruto, Lil Baby + Max Payne, Future + Champloo). Los que fallan son los que no tienen visual nostálgico (Central Cee drill 267, Carti, Drake: <12 likes).
+- **El hilo de la marca** es el visual nostálgico (anime, Need for Speed, Max Payne, Ghost of Tsushima) + "LAYHACKRS". Ese se mantiene; el género rota.
+- **Rotación sugerida** (3–4 posts/semana): 1–2 Nujabes/boom bap (alcance), 1 trap (raperos = compradores), 1 2000's/Y2K. Trap y 2000's atraen más a quien compra beats.
 - **El gran hueco es la conversión:** ~50 000 views en 10 Reels, pero solo 55 seguidores. Pocos guardados (≤26) y compartidos (≤17). Prioriza el perfil (bio, enlace, destacados) y los CTA.
 - El ritmo habitual es un post cada 2 a 4 días.
 - La muestra es pequeña: trata esto como hipótesis y actualiza la tabla con cada reporte.
