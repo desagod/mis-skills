@@ -1,0 +1,141 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#000;font-family:"Inter Display",sans-serif}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#0a0418}
+.scene{position:absolute;inset:0;display:none;overflow:hidden}
+.bg{position:absolute;inset:-60px;background:
+  radial-gradient(700px 600px at 50% 105%, rgba(255,170,60,.95), rgba(255,170,60,0) 70%),
+  radial-gradient(1100px 800px at 50% 100%, rgba(255,46,136,.9), rgba(255,46,136,0) 70%),
+  radial-gradient(700px 700px at 0% 10%, rgba(0,220,255,.35), rgba(0,220,255,0) 70%),
+  radial-gradient(700px 700px at 100% 5%, rgba(140,60,255,.45), rgba(140,60,255,0) 70%),
+  linear-gradient(180deg,#0d0524 0%,#2a0b4a 45%,#6a1466 72%,#c2186f 100%);}
+.stripes{position:absolute;left:0;right:0;bottom:0;height:600px;background:repeating-linear-gradient(180deg,rgba(10,4,24,0) 0 30px,rgba(10,4,24,.35) 30px 40px);-webkit-mask:linear-gradient(180deg,transparent,#000 60%)}
+.rgb{position:absolute;left:0;right:0;text-align:center;font-weight:900;font-style:italic;line-height:.95;letter-spacing:3px}
+.rgb span{position:absolute;left:0;right:0;mix-blend-mode:screen}
+.rgb .r{color:#ff2e88}.rgb .c{color:#00f0ff}.rgb .w{color:#fff;mix-blend-mode:normal;position:relative}
+.stars{display:flex;justify-content:center;gap:16px}
+.tag{position:absolute;display:inline-flex;align-items:center;gap:16px;padding:20px 40px;border-radius:999px;font-weight:900;font-style:italic;font-size:56px;letter-spacing:2px;border:5px solid}
+.t1{background:linear-gradient(90deg,#ff1f5a,#ff2e88);color:#fff;border-color:#fff;box-shadow:0 0 30px rgba(255,46,136,.8)}
+.t2{background:linear-gradient(90deg,#00b8d9,#00f0ff);color:#0a0418;border-color:#0a0418;box-shadow:0 0 30px rgba(0,240,255,.8)}
+.live{width:22px;height:22px;border-radius:50%;background:#fff}
+.caps{position:absolute;left:60px;right:60px;bottom:330px;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 26px}
+.caps b{font-weight:900;font-size:104px;line-height:1.05;color:#fff;text-shadow:0 6px 0 #0a0418,0 0 24px rgba(0,0,0,.7);opacity:0;display:inline-block}
+.caps b.hl{color:#ffc94d}
+.ov{position:absolute;inset:0;display:none;pointer-events:none}
+.top{position:absolute;left:0;right:0;top:0;height:300px;background:linear-gradient(180deg,rgba(8,3,20,.9),rgba(8,3,20,0))}
+.bot{position:absolute;left:0;right:0;bottom:0;height:560px;background:linear-gradient(0deg,rgba(8,3,20,.9),rgba(8,3,20,0))}
+.frame{position:absolute;inset:22px;border:6px solid #ff2e88;border-radius:36px;box-shadow:0 0 24px #ff2e88,inset 0 0 24px rgba(255,46,136,.6)}
+.logo{position:absolute;left:78px;top:80px;display:flex;align-items:center;gap:18px;color:#fff;font-weight:900;font-style:italic;font-size:50px;letter-spacing:2px}
+.dot{width:40px;height:40px;border-radius:50%;border:4px solid #00f0ff;position:relative;box-shadow:0 0 12px #00f0ff}
+.dot:after{content:"";position:absolute;left:12px;top:12px;width:10px;height:10px;border-radius:50%;background:#ff2e88}
+.ostars{position:absolute;right:78px;top:88px;display:flex;gap:8px}.ostars svg{width:40px;height:40px}
+.note{position:absolute;left:0;right:0;bottom:70px;text-align:center;color:rgba(255,255,255,.6);font-weight:600;font-size:28px}
+#fx{position:absolute;inset:0;pointer-events:none}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(180deg,rgba(0,0,0,.18) 0 2px,transparent 2px 5px)}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+#bars div{position:absolute;left:0;right:0;mix-blend-mode:screen}
+.btn{position:absolute;left:50%;top:1330px;transform:translateX(-50%);padding:28px 80px;border-radius:999px;background:#ff2e88;color:#fff;font-weight:900;font-size:60px;letter-spacing:4px;box-shadow:0 0 40px #ff2e88}
+</style></head><body><div id="stage">
+
+<div class="scene" id="sI"><div class="bg" id="iBg"></div><div class="stripes"></div>
+ <div class="rgb" id="iT" style="top:800px;font-size:160px"></div>
+ <div class="stars" id="iS" style="position:absolute;left:0;right:0;top:660px"></div></div>
+
+<div class="scene" id="sA"><div id="cityW" style="position:absolute;inset:0;transform-origin:50% 60%"><svg id="city" width="1080" height="1920"></svg></div>
+ <div class="tag t1" id="tagA" style="top:230px"><span class="live"></span>ÚLTIMA HORA</div>
+ <div class="caps" id="capA"></div></div>
+
+<div class="scene" id="sB"><div id="mapW" style="position:absolute;inset:0;transform-origin:50% 45%"><svg id="map" width="1080" height="1920"></svg></div>
+ <div class="tag t2" id="tagB" style="top:230px">DATO CURIOSO #1</div>
+ <div class="caps" id="capB"></div></div>
+
+<div class="scene" id="sE"><div class="bg"></div><div class="stripes"></div>
+ <div class="rgb" id="eT" style="top:560px;font-size:190px"></div>
+ <div style="position:absolute;left:0;right:0;top:780px;text-align:center;color:#00f0ff;font-weight:800;font-size:54px;letter-spacing:10px" id="eSub">PARA MÁS DE LEONIDA</div>
+ <div style="position:absolute;left:0;right:0;top:900px;text-align:center;color:#fff;font-weight:800;font-size:72px" id="eH"></div>
+ <div class="stars" id="eS" style="position:absolute;left:0;right:0;top:1060px"></div>
+ <div class="btn" id="eB">SEGUIR</div></div>
+
+<div class="ov" id="ov"><div class="top"></div><div class="bot"></div><div class="frame"></div>
+ <div class="logo"><div class="dot"></div>RADAR LEONIDA</div><div class="ostars"></div>
+ <div class="note">Escena de ejemplo · aquí va el clip oficial de Rockstar</div></div>
+
+<div id="fx"><svg width="1080" height="1920" style="position:absolute;inset:0;opacity:.09;mix-blend-mode:overlay"><filter id="n"><feTurbulence id="turb" type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="1"/></filter><rect width="1080" height="1920" filter="url(#n)"/></svg>
+ <div class="scan"></div><div class="vig"></div><div id="bars"></div><div id="flash"></div></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)), prog=(t,a,b)=>clamp((t-a)/(b-a));
+const eOut=x=>1-Math.pow(1-x,3), eBack=x=>{const c=1.9;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const eBounce=x=>{const n=7.5625,d=2.75;if(x<1/d)return n*x*x;if(x<2/d)return n*(x-=1.5/d)*x+.75;if(x<2.5/d)return n*(x-=2.25/d)*x+.9375;return n*(x-=2.625/d)*x+.984375};
+const rnd=s=>{const x=Math.sin(s*12.9898)*43758.5453;return x-Math.floor(x)};
+const STAR='<svg viewBox="0 0 24 24" width="70" height="70"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.2l7.1-.6z" fill="#ffcc33" stroke="#1a1000" stroke-width="1.5" stroke-linejoin="round"/></svg>';
+const rgbHTML=txt=>`<span class="r">${txt}</span><span class="c">${txt}</span><span class="w">${txt}</span>`;
+$('iT').innerHTML=rgbHTML('RADAR<br>LEONIDA');$('eT').innerHTML=rgbHTML('SÍGUEME');
+$('iS').innerHTML=Array(5).fill(`<div>${STAR}</div>`).join('');$('eS').innerHTML=$('iS').innerHTML;
+document.querySelector('.ostars').innerHTML=STAR.replace(/70/g,'40').repeat(5);
+const caps=(id,words,hl)=>$(id).innerHTML=words.map(w=>`<b class="${hl.includes(w)?'hl':''}">${w}</b>`).join('');
+caps('capA',['ASÍ','SE','VERÁN','TUS','NOTICIAS'],['NOTICIAS']);
+caps('capB',['ASÍ','SE','VERÁN','TUS','DATOS','CURIOSOS'],['DATOS','CURIOSOS']);
+// ciudad
+{let r=s=>rnd(s),b='',w='',k=1;const sky=`<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#090322"/><stop offset=".5" stop-color="#4a1269"/><stop offset=".75" stop-color="#ff2e88"/><stop offset=".85" stop-color="#ff9a3d"/></linearGradient><linearGradient id="se" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a0f55"/><stop offset="1" stop-color="#05020a"/></linearGradient>
+<g id="pl" fill="#05020a"><path d="M0 0 C 8 -150 30 -290 80 -420" stroke="#05020a" stroke-width="24" fill="none" stroke-linecap="round"/><g transform="translate(80,-420) scale(1.4)"><path d="M0 0 Q 70 -60 160 -10 Q 80 -30 0 8Z"/><path d="M0 0 Q 80 -10 140 70 Q 70 15 0 8Z"/><path d="M0 0 Q -70 -60 -160 -15 Q -80 -30 0 8Z"/><path d="M0 0 Q -80 -5 -140 75 Q -70 15 0 8Z"/><path d="M0 0 Q 20 -80 90 -110 Q 30 -60 6 4Z"/><path d="M0 0 Q -30 -80 -100 -100 Q -35 -55 -6 4Z"/></g></g></defs>
+<rect width="1080" height="1250" fill="url(#sk)"/><circle cx="700" cy="560" r="150" fill="#ffe9b0" opacity=".95"/>`;
+ for(const [x,wd,h] of [[-20,170,420],[150,130,620],[280,170,500],[450,120,760],[570,190,560],[760,140,680],[900,200,450]]){const y=1250-h;b+=`<rect x="${x}" y="${y}" width="${wd}" height="${h}" fill="#120726"/><rect x="${x}" y="${y}" width="${wd}" height="8" fill="#ff2e88"/>`;
+  for(let yy=y+36;yy<1230;yy+=40)for(let xx=x+16;xx<x+wd-16;xx+=30)if(r(k++)<.35)w+=`<rect x="${xx}" y="${yy}" width="14" height="20" fill="${r(k++)<.5?'#ffd166':'#00f0ff'}" opacity="${(.5+r(k++)*.5).toFixed(2)}"/>`;}
+ $('city').innerHTML=sky+b+w+`<rect y="1250" width="1080" height="670" fill="url(#se)"/><g fill="#ff2e88" opacity=".5"><rect x="400" y="1280" width="280" height="8"/><rect x="440" y="1320" width="200" height="6"/><rect x="480" y="1360" width="120" height="5"/></g><use href="#pl" transform="translate(60,1450)"/><use href="#pl" transform="translate(1030,1500) scale(-1.1,1.1)"/>`;}
+// mapa
+$('map').innerHTML=`<rect width="1080" height="1920" fill="#2b3a33"/>
+<path d="M0 0 L1080 0 L1080 500 C 900 560 820 700 720 660 C 600 610 560 420 420 380 C 300 340 200 220 0 200Z" fill="#14507e"/>
+<path d="M0 1200 C 160 1180 240 1330 300 1460 C 360 1590 320 1760 420 1920 L0 1920Z" fill="#14507e"/>
+<g stroke="#55665c" stroke-width="12" fill="none"><path d="M0 760 H1080"/><path d="M0 1000 H1080"/><path d="M0 1560 H1080"/><path d="M300 400 V1920"/><path d="M520 500 V1920"/><path d="M820 700 V1920"/></g>
+<g stroke="#d9d9d9" stroke-width="20" fill="none" stroke-linecap="round"><path d="M0 1120 H1080"/><path d="M660 600 V1920"/><path d="M80 1750 L660 1380 L1080 1380"/></g>
+<path id="route" d="M180 1700 C 300 1500 420 1260 660 1120 C 820 1020 860 900 840 780" stroke="#ff2e88" stroke-width="26" fill="none" stroke-linecap="round" style="filter:drop-shadow(0 0 12px #ff2e88)"/>
+<circle id="ring1" cx="840" cy="780" r="0" fill="none" stroke="#00f0ff" stroke-width="6"/><circle id="ring2" cx="840" cy="780" r="0" fill="none" stroke="#00f0ff" stroke-width="4"/>
+<g id="pin"><path d="M840 780 C 800 720 780 690 780 660 A60 60 0 1 1 900 660 C 900 690 880 720 840 780Z" fill="#ffcc33" stroke="#1a1000" stroke-width="6"/><circle cx="840" cy="660" r="22" fill="#1a1000"/></g>`;
+const route=$('route'),RL=route.getTotalLength();route.style.strokeDasharray=RL;
+// ---- render ----
+window.render=(t,f)=>{
+ const show=id=>['sI','sA','sB','sE'].forEach(s=>$(s).style.display=s===id?'block':'none');
+ let stage=$('stage'),flash=0,glitch=0,shake=0,blur=0,zoom=1;
+ // transitions
+ const tri=(t,c,w)=>clamp(1-Math.abs(t-c)/w);
+ glitch=Math.max(tri(t,1.35,.18),tri(t,9.6,.18));
+ const whip=tri(t,5.65,.16);blur=whip*28;zoom=1+whip*.25;
+ flash=Math.max(clamp(1-(t-.45)/.25)*(t>=.45?1:0)*.9, whip*.6, glitch*.3);
+ if(t<1.35){show('sI');
+  const a=eOut(prog(t,.08,.45));const ti=$('iT');ti.style.transform=`scale(${3-2*a})`;ti.style.opacity=prog(t,.08,.2);
+  const off=t<.45?0:Math.max(5,30*clamp(1-(t-.45)/.4));setRGB(ti,off,f);
+  shake=t>.45?clamp(1-(t-.45)/.35)*28:0;
+  $('iBg').style.transform=`scale(${1+t*.08})`;
+  [...$('iS').children].forEach((s,i)=>{const k=prog(t,.6+i*.08,.72+i*.08);s.style.opacity=k;s.style.transform=`scale(${eBack(k)||0})`});
+ }else if(t<5.65){show('sA');const k=prog(t,1.35,5.65);
+  $('cityW').style.transform=`scale(${1.05+.18*k}) translateY(${-30*k}px)`;
+  const tg=eBack(prog(t,1.6,1.95));$('tagA').style.left=(-750+820*tg)+'px';
+  words('capA',t,2.0,.24);
+ }else if(t<9.6){show('sB');const k=prog(t,5.65,9.6);
+  $('mapW').style.transform=`scale(${1.35-.3*eOut(k)}) rotate(${-4+4*eOut(k)}deg)`;
+  route.style.strokeDashoffset=RL*(1-eOut(prog(t,6.0,7.5)));
+  const pd=prog(t,7.5,8.1);$('pin').style.transform=`translateY(${-260*(1-eBounce(pd))}px)`;$('pin').style.opacity=pd>0?1:0;
+  [['ring1',8.1],['ring2',8.45]].forEach(([id,s])=>{const q=((t-s)%0.9+0.9)%0.9/0.9;const on=t>s;$(id).setAttribute('r',on?20+110*q:0);$(id).style.opacity=on?1-q:0});
+  const tg=eBack(prog(t,5.9,6.25));$('tagB').style.right=(-800+870*tg)+'px';
+  words('capB',t,6.3,.24);
+ }else{show('sE');
+  const a=eOut(prog(t,9.7,10.0));const ti=$('eT');ti.style.transform=`scale(${2.4-1.4*a})`;ti.style.opacity=prog(t,9.7,9.8);
+  setRGB(ti,t<10?0:Math.max(4,24*clamp(1-(t-10)/.4)),f);
+  if(t>10&&t<10.3)shake=(1-(t-10)/.3)*22; if(t>=10&&t<10.2)flash=Math.max(flash,(1-(t-10)/.2)*.7);
+  $('eSub').style.opacity=prog(t,10.2,10.5);
+  const h='@radarleonida',n=Math.floor(h.length*prog(t,10.4,11.1));$('eH').textContent=h.slice(0,n)+(n<h.length&&n>0?'|':'');
+  [...$('eS').children].forEach((s,i)=>{const k=prog(t,10.9+i*.1,11.05+i*.1);s.style.opacity=k;s.style.transform=`scale(${eBack(k)||0})`});
+  const bk=prog(t,11.4,11.7);$('eB').style.opacity=bk;$('eB').style.transform=`translateX(-50%) scale(${(eBack(bk)||0)*(1+.05*Math.sin((t-11.7)*9)*(t>11.7))})`;
+ }
+ $('ov').style.display=(t>=1.35&&t<9.6)?'block':'none';
+ const sx=shake*(rnd(f*3.1)-.5)*2,sy=shake*(rnd(f*7.7)-.5)*2;
+ stage.style.transform=`translate(${sx}px,${sy}px) scale(${zoom})`;stage.style.filter=`blur(${blur}px)`+(glitch>.3?` hue-rotate(${(rnd(f)*90-45)|0}deg) saturate(1.6)`:'');
+ $('flash').style.opacity=flash;$('turb').setAttribute('seed',f);
+ let bars='';if(glitch>0)for(let i=0;i<9;i++){const y=rnd(f*13+i)*1920,h=10+rnd(f*17+i)*90,x=(rnd(f*19+i)-.5)*160*glitch;bars+=`<div style="top:${y}px;height:${h}px;transform:translateX(${x}px);background:${i%2?'rgba(255,46,136,':'rgba(0,240,255,'}${(.35*glitch).toFixed(2)})"></div>`}
+ $('bars').innerHTML=bars;
+};
+function setRGB(el,o,f){const j=(rnd(f*5.3)-.5)*o*.6;el.querySelector('.r').style.transform=`translate(${-o}px,${j}px)`;el.querySelector('.c').style.transform=`translate(${o}px,${-j}px)`;}
+function words(id,t,start,step){[...$(id).children].forEach((w,i)=>{const k=prog(t,start+i*step,start+i*step+.14);w.style.opacity=k>0?1:0;w.style.transform=`scale(${k>0?1+.5*(1-eOut(k)):0}) rotate(${k>0?(1-k)*-6:0}deg)`});}
+</script></body></html>

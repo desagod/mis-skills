@@ -1,0 +1,68 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:transparent;font-family:"Inter Display",sans-serif}
+.bg{background:
+  radial-gradient(700px 600px at 50% 105%, rgba(255,170,60,.95), rgba(255,170,60,0) 70%),
+  radial-gradient(1100px 800px at 50% 100%, rgba(255,46,136,.9), rgba(255,46,136,0) 70%),
+  radial-gradient(700px 700px at 0% 10%, rgba(0,220,255,.35), rgba(0,220,255,0) 70%),
+  radial-gradient(700px 700px at 100% 5%, rgba(140,60,255,.45), rgba(140,60,255,0) 70%),
+  linear-gradient(180deg,#0d0524 0%,#2a0b4a 45%,#6a1466 72%,#c2186f 100%);}
+#overlay,#intro,#mock{position:relative;width:1080px;height:1920px;overflow:hidden}
+.top{position:absolute;left:0;right:0;top:0;height:300px;background:linear-gradient(180deg,rgba(8,3,20,.92),rgba(8,3,20,0))}
+.bot{position:absolute;left:0;right:0;bottom:0;height:520px;background:linear-gradient(0deg,rgba(8,3,20,.92),rgba(8,3,20,0))}
+.frame{position:absolute;inset:22px;border:6px solid #ff2e88;border-radius:36px;box-shadow:0 0 24px #ff2e88,inset 0 0 24px rgba(255,46,136,.6)}
+.frame2{position:absolute;inset:40px;border:2px solid rgba(0,240,255,.7);border-radius:26px}
+.logo{position:absolute;left:78px;top:80px;display:flex;align-items:center;gap:18px;color:#fff;font-weight:900;font-style:italic;font-size:50px;letter-spacing:2px;text-shadow:0 0 18px rgba(255,255,255,.35)}
+.dot{width:40px;height:40px;border-radius:50%;border:4px solid #00f0ff;position:relative;box-shadow:0 0 12px #00f0ff}
+.dot:after{content:"";position:absolute;left:12px;top:12px;width:10px;height:10px;border-radius:50%;background:#ff2e88;box-shadow:0 0 8px #ff2e88}
+.stars{position:absolute;right:78px;top:88px;display:flex;gap:8px}
+.stars svg{width:40px;height:40px}
+.credit{position:absolute;left:78px;bottom:70px;color:rgba(255,255,255,.75);font-weight:600;font-size:26px;letter-spacing:1px}
+.tag{display:inline-flex;align-items:center;gap:16px;padding:20px 40px;border-radius:999px;font-weight:900;font-style:italic;font-size:56px;color:#fff;letter-spacing:2px;border:5px solid #fff}
+.t1{background:linear-gradient(90deg,#ff1f5a,#ff2e88);box-shadow:0 0 30px rgba(255,46,136,.8)}
+.t2{background:linear-gradient(90deg,#00b8d9,#00f0ff);color:#0a0418;border-color:#0a0418;box-shadow:0 0 30px rgba(0,240,255,.8)}
+.t3{background:linear-gradient(90deg,#ff8a3d,#ffc94d);color:#0a0418;border-color:#0a0418;box-shadow:0 0 30px rgba(255,170,60,.8)}
+.t4{background:linear-gradient(90deg,#7b2ff7,#b06bff);box-shadow:0 0 30px rgba(176,107,255,.8)}
+.live{width:22px;height:22px;border-radius:50%;background:#fff}
+.tags{display:flex;flex-direction:column;gap:30px;padding:30px;align-items:flex-start}
+#intro .title{position:absolute;left:0;right:0;top:820px;text-align:center;color:#fff;font-weight:900;font-style:italic;font-size:150px;line-height:.95;letter-spacing:3px;text-shadow:0 0 40px rgba(255,255,255,.4)}
+#intro .flash{position:absolute;inset:0;background:#fff;opacity:0}
+#intro .istars{position:absolute;left:0;right:0;top:700px;display:flex;justify-content:center;gap:16px}
+#intro .istars svg{width:70px;height:70px}
+.stripes{position:absolute;left:0;right:0;bottom:0;height:600px;background:repeating-linear-gradient(180deg,rgba(10,4,24,0) 0 30px,rgba(10,4,24,.35) 30px 40px);-webkit-mask:linear-gradient(180deg,transparent,#000 60%)}
+.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);font-weight:800;font-size:54px;text-align:center;line-height:1.3}
+.cap{position:absolute;left:70px;right:70px;bottom:230px;color:#fff;font-weight:900;font-size:76px;line-height:1.1;text-align:center;text-shadow:0 4px 0 #0a0418,0 0 20px rgba(0,0,0,.6)}
+.cap em{font-style:normal;color:#ffc94d}
+</style></head><body>
+<template id="starT"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.2l7.1-.6z" fill="#ffcc33" stroke="#1a1000" stroke-width="1.5" stroke-linejoin="round"/></svg></template>
+
+<div id="overlay"><div class="top"></div><div class="bot"></div><div class="frame"></div><div class="frame2"></div>
+ <div class="logo"><div class="dot"></div>RADAR LEONIDA</div><div class="stars"></div>
+ <div class="credit">Imágenes: Rockstar Games</div></div>
+
+<div id="tags" class="tags">
+ <div class="tag t1" id="tag1"><span class="live"></span>ÚLTIMA HORA</div>
+ <div class="tag t2" id="tag2">DATO CURIOSO</div>
+ <div class="tag t3" id="tag3">TRUCO</div>
+ <div class="tag t4" id="tag4">RUMOR</div>
+</div>
+
+<div id="intro" class="bg"><div class="stripes"></div><div class="istars"></div><div class="title">RADAR<br>LEONIDA</div><div class="flash"></div></div>
+
+<div id="mock"><div class="bg" style="position:absolute;inset:0"></div><div class="stripes"></div>
+ <div class="ph">[ AQUÍ VA TU CLIP<br>O CAPTURA OFICIAL<br>DE ROCKSTAR ]</div>
+ <div id="ovslot" style="position:absolute;inset:0"></div>
+ <div style="position:absolute;left:70px;top:230px" id="tagslot"></div>
+ <div class="cap">Tu texto principal va aquí con una <em>palabra clave</em> resaltada</div></div>
+<script>
+const st=document.getElementById('starT').innerHTML;
+document.querySelector('#overlay .stars').innerHTML=st.repeat(5);
+document.querySelector('#intro .istars').innerHTML=Array(5).fill(st).map(s=>`<div class="s" style="opacity:0">${s}</div>`).join('');
+document.getElementById('ovslot').innerHTML=document.getElementById('overlay').innerHTML;
+document.getElementById('tagslot').innerHTML=document.getElementById('tag1').outerHTML.replace('id="tag1"','');
+// animación del intro: t en [0,1]
+window.setT=t=>{const ease=x=>1-Math.pow(1-x,3);
+ const ti=document.querySelector('#intro .title');const a=Math.min(1,t/0.35);
+ ti.style.transform=`scale(${(2.2-1.2*ease(a)).toFixed(3)})`;ti.style.opacity=a;
+ document.querySelector('#intro .flash').style.opacity=t>0.33&&t<0.45?(1-(t-0.33)/0.12)*0.8:0;
+ document.querySelectorAll('#intro .s').forEach((s,i)=>{const k=Math.max(0,Math.min(1,(t-0.45-i*0.07)/0.1));s.style.opacity=k;s.style.transform=`scale(${(0.3+0.7*ease(k)+ (k>0&&k<1?0.25*Math.sin(k*Math.PI):0)).toFixed(3)})`;});};
+</script></body></html>
