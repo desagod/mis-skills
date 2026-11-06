@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#07030f}</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+<defs>
+ <radialGradient id="bg" cx="50%" cy="50%" r="70%"><stop offset="0" stop-color="#2a0f47"/><stop offset="1" stop-color="#07030f"/></radialGradient>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b0838"/><stop offset=".45" stop-color="#7a1f7a"/><stop offset=".7" stop-color="#ff2e88"/><stop offset=".85" stop-color="#ff8a3d"/></linearGradient>
+ <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe27a"/><stop offset=".5" stop-color="#ff9a3d"/><stop offset="1" stop-color="#ff2e88"/></linearGradient>
+ <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00f0ff" stop-opacity="0"/><stop offset="1" stop-color="#00f0ff" stop-opacity=".45"/></linearGradient>
+ <clipPath id="disc"><circle cx="540" cy="540" r="400"/></clipPath>
+ <mask id="stripes"><rect width="1080" height="1080" fill="#fff"/>
+  <rect x="300" y="610" width="480" height="8" fill="#000"/><rect x="300" y="635" width="480" height="11" fill="#000"/>
+  <rect x="300" y="662" width="480" height="14" fill="#000"/><rect x="300" y="690" width="480" height="17" fill="#000"/></mask>
+ <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="glowS" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <g id="palm" fill="#0b0419">
+  <path d="M0 0 C 10 -120, 30 -230, 70 -330" stroke="#0b0419" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <g transform="translate(70,-330)">
+   <path d="M0 0 Q 70 -60 160 -10 Q 80 -30 0 8Z"/>
+   <path d="M0 0 Q 80 -10 140 70 Q 70 15 0 8Z"/>
+   <path d="M0 0 Q -70 -60 -160 -15 Q -80 -30 0 8Z"/>
+   <path d="M0 0 Q -80 -5 -140 75 Q -70 15 0 8Z"/>
+   <path d="M0 0 Q 20 -80 90 -110 Q 30 -60 6 4Z"/>
+   <path d="M0 0 Q -30 -80 -100 -100 Q -35 -55 -6 4Z"/>
+  </g>
+ </g>
+</defs>
+<rect width="1080" height="1080" fill="url(#bg)"/>
+<g clip-path="url(#disc)">
+ <rect x="140" y="140" width="800" height="570" fill="url(#sky)"/>
+ <circle cx="540" cy="600" r="175" fill="url(#sun)" mask="url(#stripes)"/>
+ <rect x="140" y="708" width="800" height="240" fill="#14062c"/>
+ <g stroke="#ff2e88" stroke-opacity=".7" stroke-width="2">
+  <line x1="140" y1="708" x2="940" y2="708" stroke-width="4"/>
+  <line x1="140" y1="722" x2="940" y2="722"/><line x1="140" y1="742" x2="940" y2="742"/>
+  <line x1="140" y1="770" x2="940" y2="770"/><line x1="140" y1="808" x2="940" y2="808"/>
+  <line x1="140" y1="860" x2="940" y2="860"/><line x1="140" y1="930" x2="940" y2="930"/>
+  <line x1="540" y1="708" x2="540" y2="940"/>
+  <line x1="540" y1="708" x2="380" y2="940"/><line x1="540" y1="708" x2="700" y2="940"/>
+  <line x1="540" y1="708" x2="200" y2="940"/><line x1="540" y1="708" x2="880" y2="940"/>
+  <line x1="540" y1="708" x2="20" y2="940"/><line x1="540" y1="708" x2="1060" y2="940"/>
+ </g>
+ <use href="#palm" transform="translate(215,760) scale(1.05)"/>
+ <use href="#palm" transform="translate(300,740) scale(.7)"/>
+ <use href="#palm" transform="translate(865,770) scale(-1.1,1.1)"/>
+ <use href="#palm" transform="translate(790,735) scale(-.65,.65)"/>
+ <!-- radar -->
+ <path d="M540 540 L940 540 A400 400 0 0 0 822.8 257.2 Z" fill="url(#sweep)" transform="rotate(-10 540 540)"/>
+ <g stroke="#00f0ff" stroke-opacity=".4" stroke-width="2" fill="none">
+  <circle cx="540" cy="540" r="130"/><circle cx="540" cy="540" r="265"/>
+  <line x1="140" y1="540" x2="940" y2="540"/><line x1="540" y1="140" x2="540" y2="940"/>
+ </g>
+ <circle cx="720" cy="360" r="11" fill="#00f0ff" filter="url(#glowS)"/>
+ <circle cx="720" cy="360" r="24" fill="none" stroke="#00f0ff" stroke-width="3" stroke-opacity=".6"/>
+</g>
+<circle cx="540" cy="540" r="400" fill="none" stroke="#ff2e88" stroke-width="12" filter="url(#glow)"/>
+<circle cx="540" cy="540" r="428" fill="none" stroke="#00f0ff" stroke-width="4" stroke-opacity=".8" filter="url(#glowS)"/>
+<g font-family="Inter Display" font-weight="900" font-style="italic" text-anchor="middle" filter="url(#glowS)">
+ <text x="540" y="830" font-size="74" fill="#ffffff" letter-spacing="6">RADAR</text>
+ <text x="540" y="890" font-size="44" fill="#00f0ff" letter-spacing="10">LEONIDA</text>
+</g>
+</svg></body></html>
