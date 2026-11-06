@@ -30,3 +30,12 @@ La precarga de GTA 6 arranca el 10 y pesa 212 GB 💀 ¿Qué vas a borrar para q
 - https://www.gosugamers.net/entertainment/news/79469-rockstar-confirms-gta-vi-pre-loads-begin-on-10-november-requires-212gb-of-space
 - https://www.keengamer.com/articles/news/grand-theft-auto-vi-pre-load-starts-november-10-with-a-212-gb-file/
 - https://gameriv.com/gta-6-pre-load-starts-november-10-on-ps5-and-xbox-series-xs-requires-up-to-212-gb/
+
+## Texto final narrado (voz femenina "Gia", Higgsfield, 51,6 s)
+Si vas a jugar GTA 6 el día uno, ve borrando cosas de tu consola. Sí, también ese juego que compraste en oferta y nunca abriste. La precarga arranca el 10 de noviembre en PS5 y Xbox Series, y el 19 entras directo a Leonida. Y agárrate, que pesa hasta 212 gigas. Casi un tercio de una PS5 normalita. Ni tu suegra ocupa tanto espacio. ¿Compraste la caja con código en vez de disco? Llega a tiendas el 12. Cajita bonita y adentro un papelito. Gracias, Rockstar. ¿Y los de PC? Sin fecha. Paciencia, mis reyes, ya están acostumbrados a sufrir.
+
+[corte en CapCut: aquí va tu opinión]
+
+Ahora dime, ¿qué vas a borrar para que quepa? Si me dices Warzone, te sigo yo a ti.
+
+Audio: https://d8j0ntlcm91z4.cloudfront.net/user_3LkWSWKBmmfGd3QKeaPIUfzO0We/hf_20261106_234431_cb6b8330-746d-4b04-a743-50258f4b2be8.wav
