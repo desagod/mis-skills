@@ -5,24 +5,22 @@ ediciones en caja con código (sin disco) en tiendas desde el 12 de noviembre; l
 
 | Tiempo | Voz | Texto en pantalla | Visual |
 |---|---|---|---|
-| 0–3 s | ¿Vas a jugar GTA 6 el día uno? Revisa tu consola hoy. | REVISA TU CONSOLA HOY | Intro con paneles + etiqueta ÚLTIMA HORA |
-| 3–10 s | Rockstar confirmó que la precarga arranca el 10 de noviembre en PS5 y Xbox Series. | PRECARGA: 10 NOV | Calendario con el 10 marcado en rosa |
-| 10–15 s | O sea, lo dejas descargado y el 19, cuando sale, solo le das a jugar. | SALE EL 19 NOV | Ciudad de noche, zoom lento |
-| 15–24 s | El juego pesa hasta 212 gigas. Una PS5 original trae unos 667 libres. Haz la cuenta. GTA 6 se come casi un tercio de tu consola. | 212 GB 😳 | Barra de almacenamiento llenándose |
-| 24–30 s | Si compraste la caja que trae código en vez de disco, esa llega a tiendas el 12. Y en PC todavía no hay fecha. | CAJA CON CÓDIGO: 12 NOV · PC: SIN FECHA | Mapa con pin |
-| 30–52 s | **TU OPINIÓN** (con tu voz) | MI OPINIÓN | Tú hablando o imagen IA |
-| 52–60 s | ¿Ya hiciste espacio o te toca borrar Warzone? Te leo. | ¿QUÉ VAS A BORRAR? 👇 | Cierre SÍGUEME |
+| 0–4 s | Si vas a jugar GTA 6 el día uno, ve borrando cosas de tu consola. Sí, también ese juego que compraste en oferta y nunca abriste. | VE BORRANDO COSAS 💀 | Intro con paneles + etiqueta ÚLTIMA HORA |
+| 4–11 s | Rockstar ya soltó fechas. La precarga arranca el 10 de noviembre en PS5 y Xbox Series. Lo dejas bajando y el 19 entras directo a Leonida como si fueras el dueño. | PRECARGA: 10 NOV | Calendario con el 10 marcado en rosa |
+| 11–22 s | Y agárrate, que pesa hasta 212 gigas. Doscientos. Doce. Gigas. Una PS5 normalita trae unos 667 libres, así que este desgraciado se come casi un tercio de tu consola. Ni tu suegra ocupa tanto espacio. | 212 GB 😳 | Barra de almacenamiento llenándose hasta ponerse roja |
+| 22–28 s | ¿Compraste la caja que trae código en vez de disco? Esa llega a tiendas el 12. Cajita bonita y adentro un papelito. Gracias, Rockstar. | CAJA CON CÓDIGO: 12 NOV | Caja abriéndose, sale un papel volando |
+| 28–32 s | ¿Y los de PC? Sin fecha. Paciencia, mis reyes, ustedes ya están acostumbrados a sufrir. | PC: SIN FECHA 🫠 | Mapa con pin y signo de interrogación |
+| 32–52 s | **TU OPINIÓN** (con tu voz) | MI OPINIÓN | Tú hablando o escena ilustrada |
+| 52–60 s | Ahora dime, ¿qué vas a borrar para que quepa? Si me dices Warzone, te sigo yo a ti. | ¿QUÉ VAS A BORRAR? 👇 | Cierre SÍGUEME |
 
-## Preguntas guía para tu opinión (responde 2 o 3 con tus palabras)
-- ¿Vas a precargar el 10 o esperas al día del lanzamiento?
-- ¿212 GB te parece exagerado o normal para un juego así?
-- ¿Te molesta que no salga en PC desde el inicio?
-- ¿Qué es lo primero que vas a hacer cuando entres a Leonida?
+## Preguntas guía para tu opinión (responde 2 o 3 a tu manera, sin leer)
+- ¿Precargas el 10 o eres de los que lo descargan el mismo día y sufren?
+- 212 GB: ¿exagerado o te vale mientras se vea así de cabrón?
+- ¿Qué opinas de que los de PC se queden esperando otra vez?
+- ¿Qué es lo primero que vas a hacer al entrar a Leonida? (Mientras más honesto y ridículo, mejor.)
 
 ## Descripción
-La precarga de GTA 6 empieza el 10 de noviembre y pesa hasta 212 GB 😳 ¿Ya tienes espacio? Te leo 👇
-
-Contenido creado con ayuda de IA.
+La precarga de GTA 6 arranca el 10 y pesa 212 GB 💀 ¿Qué vas a borrar para que quepa? 👇
 
 ## Hashtags
 #GTA6 #GTAVI #GrandTheftAuto6 #ViceCity #Leonida #PS5 #XboxSeriesX #Gaming #NoticiasGaming #RadarLeonida
